@@ -66,7 +66,6 @@ export const addTask = async (req: Request, res: Response) => {
 // @access  Public
 export const updateTask = async (req: Request, res: Response) => {
   const { title, completed, date } = req.body;
-  console.log('received ', req.body);
 
   try {
     const updatedTask = await Task.findByIdAndUpdate(
@@ -80,7 +79,6 @@ export const updateTask = async (req: Request, res: Response) => {
       },
       { new: true }
     );
-    console.log('updated to', updatedTask);
     res.status(200).json(updatedTask);
   } catch (error) {
     res.status(404).json({
