@@ -11,7 +11,7 @@ Runs the app in the development mode. Open http://localhost:8000 to view it in t
 Things to Note
 
 * Configure the .env file with the attached DB_CREDENTIALS in the email.
-* No Typescript used for backend.
+* Typescript used for backend.
 
 ## Contact
 Send a mail to jkavishkar@gmail.com for any questions. Happy Coding... Thank you for the opportunity :)
